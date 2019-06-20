@@ -9,6 +9,8 @@ https://paper.dropbox.com/doc/Meeting-notes-Mayank-Singh-and-Tapasweni-Pathak--A
 
 https://paper.dropbox.com/doc/Meeting-notes-Khushboo-Verma-and-Tapasweni-Pathak--AfY0Em92eeNzImgsEW3ST7_vAQ-D5x5r5CHNWLLHnJLAVkVU
 
+https://paper.dropbox.com/doc/Meeting-notes-Anchal-Hora-and-Tapasweni-Pathak--AfYz1fGd8HCZmgGrjMG4q8__AQ-HhokLaYpe4xKwspbK6K3q
+
 # Communication
 
 On tickets or in https://github.com/tapaswenipathak/Interns-qna
@@ -19,6 +21,8 @@ On tickets or in https://github.com/tapaswenipathak/Interns-qna
 
 [@vermakhushboo Timeline]() 
 
+[@horaanchal Timeline]()
+
 # Daily Logs
 
 Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
@@ -28,3 +32,5 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 [@code-monk08 Calendar](https://calendly.com/code-monk08)
 
 [@vermakhushboo Calendar]()
+
+[@horaanchal Calendar]()
