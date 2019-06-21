@@ -47,7 +47,7 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 
 [@horaanchal Calendar](https://calendly.com/horaanchal17/15min)
 
-[@Aashi15bansal Calendar]()
+[@Aashi15bansal Calendar](https://calendly.com/its_ashita)
 
 [@AymanShafi Calendar]()
 
