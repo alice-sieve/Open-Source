@@ -31,7 +31,7 @@ On tickets or in https://github.com/tapaswenipathak/Interns-qna
 
 [@Aashi15bansal Timeline]()
 
-[@AymanShafi Timeline]()
+[@AymanShafi Timeline](https://paper.dropbox.com/doc/Meeting-notes-Ayman-Shafi-and-Tapasweni-Pathak--AfjHqMNDK312YcSRoUw1_Ii7Ag-nyfKGsCvXdAc4rPFUNwMF)
 
 [@amulyaarunb Timeline]()
 
@@ -49,6 +49,6 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 
 [@Aashi15bansal Calendar](https://calendly.com/its_ashita)
 
-[@AymanShafi Calendar]()
+[@AymanShafi Calendar](https://calendly.com/ayman-shafi)
 
 [@amulyaarunb Calendar](https://calendly.com/amulyaarunb/15min)
