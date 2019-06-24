@@ -33,6 +33,8 @@ https://paper.dropbox.com/doc/Meeting-notes-Amulya-Arun-B-and-Tapasweni-Pathak--
 
 https://paper.dropbox.com/doc/Meeting-notes-Hardik-Kumar-and-Tapasweni-Pathak--AfmbTk8kbJpE3l8QCK_0wGebAQ-G0phVsg4IrUwcS1ddV9kS
 
+https://paper.dropbox.com/doc/Meeting-notes-Anika-Murarka-and-Tapasweni-Pathak--Afo3tkTMhEIo3WLXhg7H2nk2AQ-Pjq8kSR9PwjDuUZnUPYma
+
 # Communication
 
 On tickets or in https://github.com/tapaswenipathak/Interns-qna
@@ -53,6 +55,8 @@ On tickets or in https://github.com/tapaswenipathak/Interns-qna
 
 [@kumar-hardik Timeline]()
 
+[@anikamurarka Timeline]()
+
 # Daily Logs
 
 Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
@@ -72,3 +76,5 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 [@amulyaarunb Calendar](https://calendly.com/amulyaarunb/15min)
 
 [@kumar-hardik Calendar]()
+
+[@anikamurarka Calendar]()
