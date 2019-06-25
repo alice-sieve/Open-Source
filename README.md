@@ -39,6 +39,9 @@ https://paper.dropbox.com/doc/Meeting-notes-Sayantan-Das-and-Tapasweni-Pathak--A
 
 https://paper.dropbox.com/doc/Meeting-notes-Samarth-Chugh-and-Tapasweni-Pathak--AfryrIJDyRa_V65T4ajMkKp0AQ-tOINPan4H0lX7CAV01iXu
 
+https://paper.dropbox.com/doc/Meeting-notes-Niharika-Vadlamudi-and-Tapasweni-Pathak--Afv_hPS6buBYrx~G7nN63qiaAQ-p1yePKCfBw4U2oqvvX55a
+
+
 # Communication
 
 On tickets or in https://github.com/tapaswenipathak/Interns-qna
@@ -65,6 +68,8 @@ On tickets or in https://github.com/tapaswenipathak/Interns-qna
 
 [@csamarth Timeline]()
 
+[@NiharikaMessi Timeline]()
+
 # Daily Logs
 
 Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
@@ -90,3 +95,5 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 [@ucalyptus Calendar]()
 
 [@csamarth Calendar](https://calendly.com/csamarth)
+
+[@NiharikaMessi Calendar]()
