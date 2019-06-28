@@ -45,6 +45,7 @@ https://paper.dropbox.com/doc/Meeting-notes-Aman-Verma-and-Tapasweni-Pathak--Afv
 
 https://paper.dropbox.com/doc/Meeting-notes-Dhiren-Serai-and-Tapasweni-Pathak--Af7q1O4Jr6QkLWJ85pxV6vUOAQ-s0xKzDJ1NNGI4RQmsVHcA
 
+https://paper.dropbox.com/doc/Meeting-notes-Deya-Chatterjee-and-Tapasweni-Pathak--Af7hZ8QxAcfd4uBwRe5y11~pAQ-Ceu94x0sttjhFT7NmVFKs
 
 # Communication
 
@@ -78,6 +79,8 @@ On tickets or in https://github.com/tapaswenipathak/Interns-qna
 
 [@dhirensr Timeline]()
 
+[@deyachatterjee Timeline]()
+
 # Daily Logs
 
 Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
@@ -109,3 +112,5 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 [@nightwarrior-xxx Calendar]()
 
 [@dhirensr Calendar]()
+
+[@deyachatterjee Calendar]()
