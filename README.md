@@ -49,6 +49,8 @@ https://paper.dropbox.com/doc/Meeting-notes-Deya-Chatterjee-and-Tapasweni-Pathak
 
 https://paper.dropbox.com/doc/Meeting-notes-aman-shah-and-Tapasweni-Pathak--AgppFx9mCqXSBOdyVMNkRWcCAQ-GgfhjF8E7taLMQIWmrTQu
 
+https://paper.dropbox.com/doc/Meeting-notes-Mayank-Chauhan-and-Tapasweni-Pathak--Ag191XxDEOttttYitxYWbyGGAg-XuUIaMfM4Y0J762BolNSL
+
 # Communication
 
 On tickets or in https://github.com/tapaswenipathak/Interns-qna
@@ -118,3 +120,5 @@ Write daily log in - https://github.com/tapaswenipathak/Interns-day-log
 [@deyachatterjee Calendar]()
 
 [@shah-aman Calendar](https://calendly.com/aman-shah/15min)
+
+[@mayankchauhan971 Calendar]()
