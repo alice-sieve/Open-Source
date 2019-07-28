@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+<a href="https://www.debian.org" target="_blank"><img src="{% static 'img/debian.png' %}" id="debian" /></a>
+<a href="https://www.ubuntu.com" target="_blank"><img src="{% static 'img/ubuntu.png' %}" id="ubuntu" /></a>
+<a href="https://www.archlinux.org/" target="_blank"><img src="{% static 'img/arch.png' '%}" id="arch" /></a>
+
+<script type="text/javascript" src="{% static 'js/debian.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/ubuntu.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/arch.js' %}"></script>
+
+{% endblock %}
