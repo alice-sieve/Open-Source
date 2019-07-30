@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem; height: 30rem;  margin-bottom: 100px;">
+    {% if object.image %}
+        <img class="card-img-top img-fluid" src="{{ object.image.url }}" alt="Card image cap">
+    {% endif %}
+    <div class="card-body">
+        <h5 class="card-title">{{ object.title }}</h5>
+        <p class="card-text">{{ object.description|truncatewords:12}}</p>
+        <a href="#" class="btn btn-primary">Explore</a>
+    </div>
+</div>

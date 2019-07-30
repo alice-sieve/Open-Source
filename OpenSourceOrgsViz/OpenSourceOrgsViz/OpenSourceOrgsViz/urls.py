@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 from django.contrib import admin
-from django.conf.urls import url
+from django.conf.urls import url, include
 
 from .views import (
     home_page
@@ -11,6 +11,8 @@ from .views import (
 urlpatterns = [
     url('admin/', admin.site.urls),
     url(r'^$', home_page, name='home_page'),
+    url(r'^projects/', include('projects.urls', namespace='projects')),
+    url(r'^search/', include('search.urls', namespace='search')),
 ]
 
 
