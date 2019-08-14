@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify
 from GithubWrapper import GithubWrapper
+from GitlabWrapper import GitlabWrapper
 from flask_cors import CORS
 
 app = Flask(__name__)
@@ -19,78 +20,167 @@ def index_route():
         'author': 'code-monk08',
         'author_url': 'https://code-monk08.github.io/',
         'base_url': '',
-        'project_name': 'Github API Wrapper',
-        'project_url': '',
+        'project_name': 'Generic API Wrapper',
+        'project_url': 'https://github.com/alice-sieve/Open-Source/tree/API-Wrapper-code-monk08',
         })
 
 
-############################################
-# GitHub
+###########################################
+# GET ORGANIZATIONS/ GROUP MEMBERS
 ###########################################
 
-# GET /users/:username
+#github
+@app.route('/<platform>/orgs/<org>/members', methods=['GET'])
+def get_org_members_route(platform, org):
 
-# @app.route('/users/<username>', methods=['GET'])
-# def get_user_name_route(username):
-#     result = dict(user.get_user_name(username))
-#     return jsonify(date=result['date'], sunsign=result['sunsign'],
-#                    horoscope=result['horoscope'])
+    # GET github/orgs/:org/members
+    if platform == "github":
+        result = dict(user.get_org_members(org))
+        return jsonify(result)
 
-
-# GET /orgs/:org/members
-
-@app.route('/orgs/<org>/members', methods=['GET'])
-def get_org_members_route(org):
-    result = dict(user.get_org_members(org))
-    return jsonify(result)
-
-
-# GET /orgs/:org/repos
-
-@app.route('/orgs/<org>/repos', methods=['GET'])
-def get_org_repos_route(org):
-    result = dict(user.get_org_repos(org))
-    return jsonify(result)
+#gitlab
+@app.route('/<platform>/groups/<group_id>/members', methods=['GET'])
+def get_group_members_route(platform, group_id):
+    
+    # GET gitlab/groups/:id/members
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_group_members(group_id))
+        return jsonify(result)
 
 
-# GET /repos/:owner/:repo/commits
+###########################################
+# GET ORGANIZATIONS REPOS/ GROUP PROJECTS 
+###########################################
 
-@app.route('/repos/<owner>/<repo>/commits', methods=['GET'])
-def get_repo_commits_route(owner, repo):
-    result = dict(user.get_repo_commits(str(owner+"/"+repo)))
-    return jsonify(result)
+#github
+@app.route('/<platform>/orgs/<org>/repos', methods=['GET'])
+def get_org_repos_route(platform, org):
+    
+    # GET github/orgs/:org/repos
+    if platform == "github":
+        result = dict(user.get_org_repos(org))
+        return jsonify(result)
 
-
-# GET /repos/:owner/:repo/issues
-
-@app.route('/repos/<owner>/<repo>/issues', methods=['GET'])
-def get_repo_issues_route(owner, repo):
-    result = dict(user.get_repo_issues(str(owner+"/"+repo)))
-    return jsonify(result)
-
-
-# GET /orgs/:org/issues
-
-@app.route('/orgs/<org>/issues', methods=['GET'])
-def get_org_issues_route(org):
-    result = dict(user.get_org_issues(org))
-    return jsonify(result)
-
-
-# GET /repos/:owner/:repo/issues/comments
-
-@app.route('/repos/<owner>/<repo>/issues/comments', methods=['GET'])
-def get_issue_comments_route(owner, repo):
-    result = dict(user.get_issue_comments_dict(str(owner+"/"+repo)))
-    return jsonify(result)
+#gitlab
+@app.route('/<platform>/groups/<group_id>/projects', methods=['GET'])
+def get_group_projects_route(platform, group_id):
+    
+    # GET gitlab/groups/:id/projects
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_group_projects(group_id))
+        return jsonify(result)
 
 
-# GET /repos/:owner/:repo/pulls
+###########################################
+# GET REPOS COMMITS / PROJECTS COMMITS 
+###########################################
 
-@app.route('/repos/<owner>/<repo>/pulls', methods=['GET'])
-def get_repo_pulls_route(owner, repo):
-    result = dict(user.get_repo_pulls(str(owner+"/"+repo)))
-    return jsonify(result)
+#github
+@app.route('/<platform>/repos/<owner>/<repo>/commits', methods=['GET'])
+def get_repo_commits_route(platform, owner, repo):
+    
+    # GET github/repos/:owner/:repo/commits
+    if platform == "github":
+        result = dict(user.get_repo_commits(str(owner+"/"+repo)))
+        return jsonify(result)
+
+#gitlab
+@app.route('/<platform>/projects/<project_id>/repository/commits', methods=['GET'])
+def get_project_commits_route(platform, project_id):
+    
+    # GET gitlab/projects/:id/repository/commits
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_project_commits(project_id))
+        return jsonify(result)
+
+###########################################
+# GET REPOS ISSUES / PROJECTS ISSUES 
+###########################################
+
+#github
+@app.route('/<platform>/repos/<owner>/<repo>/issues', methods=['GET'])
+def get_repo_issues_route(platform, owner, repo):
+    
+    # GET github/repos/:owner/:repo/issues
+    if platform == "github":
+        result = dict(user.get_repo_issues(str(owner+"/"+repo)))
+        return jsonify(result)
+
+#gitlab
+@app.route('/<platform>/projects/<project_id>/issues', methods=['GET'])
+def get_project_issues_route(platform, project_id):
+    
+    # GET gitlab/projects/:id/issues
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_project_issues(project_id))
+        return jsonify(result)
+
+###########################################
+# GET ORGANIZATION ISSUES / GROUPS ISSUES 
+###########################################
+
+#github
+@app.route('/<platform>/orgs/<org>/issues', methods=['GET'])
+def get_org_issues_route(platform, org):
+    
+    # GET github/orgs/:org/issues
+    if platform == "github":
+        result = dict(user.get_org_issues(org))
+        return jsonify(result)
+
+#gitlab
+@app.route('/<platform>/groups/<group_id>/issues', methods=['GET'])
+def get_group_issues_route(platform, group_id):
+    
+    # GET gitlab/groups/:id/issues
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_group_issues(group_id))
+        return jsonify(result)
+
+##################################################
+# GET REPO ISSUES COMMENTS/ PROJECT ISSUE COMMENTS   
+##################################################
+
+#github
+@app.route('/<platform>/repos/<owner>/<repo>/issues/comments', methods=['GET'])
+def get_issue_comments_route(platform, owner, repo):
+    
+    # GET github/repos/:owner/:repo/issues/comments
+    if platform == "github":
+        result = dict(user.get_issue_comments_dict(str(owner+"/"+repo)))
+        return jsonify(result)
+
+#gitlab
+@app.route('/<platform>/projects/<project_id>/issues/<issue_iid>/notes', methods=['GET'])
+def get_issue_comments_dict_route(platform, project_id, issue_iid):
+    
+    # GET gitlab/projects/:id/issues/:issue_iid/notes
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_issue_comments_dict(project_id, issue_iid))
+        return jsonify(result)
+
+
+##################################################
+# GET REPO PULL REQUESTS / PROJECT MERGE REQUESTS   
+##################################################
+
+#github
+@app.route('/<platform>/repos/<owner>/<repo>/pulls', methods=['GET'])
+def get_repo_pulls_route(platform, owner, repo):
+    
+    # GET github/repos/:owner/:repo/pulls
+    if platform == "github":
+        result = dict(user.get_repo_pulls(str(owner+"/"+repo)))
+        return jsonify(result)
+
+#gitlab
+@app.route('/<platform>/projects/<project_id>/merge_requests', methods=['GET'])
+def get_project_merge_request_route(platform, project_id):
+    
+    # GET gitlab/projects/:id/merge_requests
+    if platform == "gitlab":
+        result = dict(GitlabWrapper.get_project_merge_request(project_id))
+        return jsonify(result)
 
 ###########################################
 # Start Flask

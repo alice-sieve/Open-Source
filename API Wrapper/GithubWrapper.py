@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 from github import Github
 from datetime import datetime, timezone
-from GithubToken import github_token, user, password
-
+from GithubToken import github_token
 
 ####################################################################
 # Github API Wrapper
@@ -16,11 +16,7 @@ class GithubWrapper:
         handles user authentication &
         creates user object
         """
-
-        if github_token is None:
-            self.user_obj = Github(user, password)
-        else:
-            self.user_obj = Github(github_token)
+        self.user_obj = Github(github_token)
 
     def get_org_obj(self, organization):
         """
@@ -30,16 +26,6 @@ class GithubWrapper:
 
         self.org_obj = self.user_obj.get_organization(organization)
         return self.org_obj
-
-    
-    def get_user_name(self, username):
-        """
-         find name for given username 
-         Return type: string
-         """
-
-        user = self.user_obj.get_user(username)
-        return user.name
 
     
     def get_org_members(self, organization):
